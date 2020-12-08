@@ -1,0 +1,6 @@
+MultiSetUmarbaev1954545.java:35: error: cannot find symbol
+    arraycopy(input, 0, elemnts, 0, n);
+                        ^
+  symbol:   variable elemnts
+  location: class MultiSet
+1 error

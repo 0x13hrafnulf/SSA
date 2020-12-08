@@ -79,7 +79,7 @@ int func3(int f3d)
      }
      if (len > 8000) 
      { 
-          error("too long"); 
+          perror("too long"); 
           return -1;
      }
      size_t buffer_size = len + 1; 

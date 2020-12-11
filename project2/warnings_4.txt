@@ -1,0 +1,84 @@
+
+MultiSetUmarbaev1954545.java:28: warning: The prover cannot establish an assertion (NullField) in method MultiSet
+  /*@ non_null @*/ int[] elements;
+                         ^
+MultiSetUmarbaev1954545.java:81: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method add:  int multiply overflow
+       int[] new_elements = new int[2*n]; 
+                                     ^
+MultiSetUmarbaev1954545.java:85: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method add
+    elements[n]=elt;
+            ^
+MultiSetUmarbaev1954545.java:85: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method add
+    elements[n]=elt;
+            ^
+MultiSetUmarbaev1954545.java:90: warning: The prover cannot establish an assertion (PossiblyNegativeSize) in method add
+    int[] new_elements = new int[n + b.n];
+                                   ^
+MultiSetUmarbaev1954545.java:90: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method add:  underflow in int sum
+    int[] new_elements = new int[n + b.n];
+                                   ^
+MultiSetUmarbaev1954545.java:90: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method add:  overflow in int sum
+    int[] new_elements = new int[n + b.n];
+                                   ^
+
+MultiSetUmarbaev1954545.java:92: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method add:  overflow in int sum
+    arraycopy(b.elements, 0, new_elements, n+1, b.n);
+                                            ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method arraycopy
+       dest[destOff+i] = src[srcOff+i];
+                            ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method arraycopy
+       dest[destOff+i] = src[srcOff+i];
+                            ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method arraycopy:  overflow in int sum
+       dest[destOff+i] = src[srcOff+i];
+                                   ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method arraycopy:  underflow in int sum
+       dest[destOff+i] = src[srcOff+i];
+                                   ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method arraycopy
+       dest[destOff+i] = src[srcOff+i];
+           ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method arraycopy:  underflow in int sum
+       dest[destOff+i] = src[srcOff+i];
+                   ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method arraycopy:  overflow in int sum
+       dest[destOff+i] = src[srcOff+i];
+                   ^
+MultiSetUmarbaev1954545.java:111: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method arraycopy
+       dest[destOff+i] = src[srcOff+i];
+           ^
+MultiSetUmarbaev1954545.java:72: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method getCount
+      if (elements[i] == elt) count++; 
+                  ^
+MultiSetUmarbaev1954545.java:72: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method getCount
+      if (elements[i] == elt) count++; 
+                  ^
+MultiSetUmarbaev1954545.java:72: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method getCount:  overflow in int sum
+      if (elements[i] == elt) count++; 
+                                   ^
+MultiSetUmarbaev1954545.java:64: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method removeAll
+         elements[i] = elements[n];
+                               ^
+MultiSetUmarbaev1954545.java:64: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method removeAll
+         elements[i] = elements[n];
+                               ^
+MultiSetUmarbaev1954545.java:62: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method removeAll
+      if (elements[i] == elt ) {
+                  ^
+MultiSetUmarbaev1954545.java:62: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method removeAll
+      if (elements[i] == elt ) {
+                  ^
+MultiSetUmarbaev1954545.java:51: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method removeOnce
+         elements[i] = elements[n];
+                               ^
+MultiSetUmarbaev1954545.java:49: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method removeOnce
+      if (elements[i] == elt ) {
+                  ^
+MultiSetUmarbaev1954545.java:49: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method removeOnce
+      if (elements[i] == elt ) {
+                  ^
+MultiSetUmarbaev1954545.java:51: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method removeOnce
+         elements[i] = elements[n];
+                               ^
+27 warnings

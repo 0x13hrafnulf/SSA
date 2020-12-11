@@ -49,29 +49,50 @@ class MultiSet {
   }
 
   //@ requires b != null;
-  //@ modifies elements, n;
+  MultiSet(MultiSet b) {
+    elements = new int[0];
+    n = 0;
+    this.add(b);    
+  }
+
+  //@ requires b != null;
   void add(MultiSet b) 
   {
-
-      //@assume (n + b.n >= Integer.MIN_VALUE) && (n + b.n  <= Integer.MAX_VALUE);
-      int[] new_elements = new int[n+b.n];
+    int size = Math.addExact(n, b.n);
+    if((size >= Integer.MIN_VALUE) && (size <= Integer.MAX_VALUE))
+    {
+      //@assume (b.n + n >= Integer.MIN_VALUE) && (b.n + n <= Integer.MAX_VALUE);
+      int[] new_elements = new int[b.n + n];
       arraycopy(this.elements, 0, new_elements, 0, n);
-      //arraycopy(b.elements, 0, new_elements, n, b.n);   
+      arraycopy(b.elements, 0, new_elements, n, b.n);   
       elements = new_elements; 
-      n = n + b.n;
-
+      n = b.n + n;
+    }
   }
 
   //@ requires a != null;
   void add(int[] a) 
   {
-
     this.add(new MultiSet(a));
-
   }
 
-
-  
+  void add(int elt) 
+  {
+    if (n == elements.length) 
+    {
+      int size = Math.multiplyExact(n, 2);
+      size = Math.addExact(size, 1);
+      if((size >= Integer.MIN_VALUE) && (size <= Integer.MAX_VALUE))
+      {
+        //@assume (2 * n + 1 >= Integer.MIN_VALUE) && (2 * n + 1 <= Integer.MAX_VALUE);
+        int[] new_elements = new int[2 * n + 1]; 
+        arraycopy(elements, 0, new_elements, 0, n);
+        elements = new_elements;
+      } 
+    }
+    elements[n]=elt;
+    n++;
+  }
 
   //@ requires src != null;
   //@ requires dest != null;
@@ -91,5 +112,52 @@ class MultiSet {
        dest[destOff+i] = src[srcOff+i];
     }
   }
+
+
+  void removeOnce(int elt) 
+  {
+    //@ loop_invariant i >= 0 && i <= n;
+    //@ loop_invariant n >= 0 && n <= elements.length;
+    for (int i = 0; i < n; i++) {  
+      if (elements[i] == elt ) {
+         n--;
+         elements[i] = elements[n];
+         return;
+      }
+    }
+  }
+
+  /* the next method should remove ALL occurrences of the parameter int elt.
+   */
+
+  void removeAll(int elt) 
+  {
+    //@ loop_invariant i >= 0 && i <= n;
+    //@ loop_invariant n >= 0 && n <= elements.length;
+    for (int i = 0; i < n; i++) {   
+      if (elements[i] == elt ) {
+         n--;
+         elements[i] = elements[n];
+         i--;
+      }
+    }
+  }
+
+  //@ ensures \result >= 0;
+  int getCount(int elt) 
+  {
+    int count = 0;
+    //@ loop_invariant i >= 0 && i <= n;
+    //@ loop_invariant count >= 0;
+    for (int i = 0; i < n; i++)
+    {
+      if (elements[i] == elt)
+      {
+        if(count < Integer.MAX_VALUE) count++;
+      }
+    }
+    return count;
+  }
+
 
 }

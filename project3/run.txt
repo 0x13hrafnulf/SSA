@@ -1,0 +1,6 @@
+./configure
+make
+make install
+CC=/home/hrafnulf/Documents/SSA/project3/afl-2.52b/afl-gcc CXX=/home/hrafnulf/Documents/SSA/project3/afl-2.52b/afl-g++ ./configure
+make clean all
+./afl-2.52b/afl-fuzz -i testcases/jpg -o output_afl/ magick @@

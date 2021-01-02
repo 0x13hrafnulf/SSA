@@ -1,0 +1,2430 @@
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000000,sig:11,src:000008,op:havoc,rep:8
+SHA1: 76781e628bce9b35cee8ca9a94ca657952f33ca8
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000000,sig:11,src:000008,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635ff90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556396000 
+r12=0x0000000000000000 r13=0x0000000000000001 r14=0x0000555556364430 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000001,sig:11,src:000008,op:havoc,rep:8
+SHA1: 20a4ee8e992d2234eba07504950f04fe8853c54f
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000001,sig:11,src:000008,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635ff90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556396000 
+r12=0x0000000000000000 r13=0x0000000000000007 r14=0x0000555556364430 r15=0x0000000000000005 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000002,sig:11,src:000013,op:havoc,rep:4
+SHA1: bf3449cca7cbab07f795781c9fa08092be0122df
+Classification: PROBABLY_EXPLOITABLE
+Hash: 03ddc7ecc394ef2781a81331133d44d9.c791c5557f97d6532266a9768550cbc7
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000002,sig:11,src:000013,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000003,sig:11,src:000013,op:havoc,rep:8
+SHA1: 232674d1ca451c9bda134881991b9aeb6fcfbc47
+Classification: PROBABLY_EXPLOITABLE
+Hash: 03ddc7ecc394ef2781a81331133d44d9.c791c5557f97d6532266a9768550cbc7
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000003,sig:11,src:000013,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556373990 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000004,sig:11,src:000013,op:havoc,rep:16
+SHA1: 0f29514f767c3c97e75436803a21d79810631e14
+Classification: PROBABLY_EXPLOITABLE
+Hash: 03ddc7ecc394ef2781a81331133d44d9.c791c5557f97d6532266a9768550cbc7
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000004,sig:11,src:000013,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556370370 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000005,sig:11,src:000017,op:havoc,rep:8
+SHA1: 8496400ddafca1a71f8eceed175d6c68ae5b32bc
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000005,sig:11,src:000017,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371240 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b8000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000006,sig:11,src:000017,op:havoc,rep:2
+SHA1: 17c6471208d0a21a17f3fe6e7adc6910bf6b10cd
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000006,sig:11,src:000017,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000007,sig:11,src:000038,op:havoc,rep:4
+SHA1: b0cf0d61c3f3c054c366b806bf1b9c39fbf368b0
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000007,sig:11,src:000038,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556367a90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000000000000007 r14=0x0000555556364430 r15=0x0000000000000005 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000008,sig:11,src:000038,op:havoc,rep:4
+SHA1: 74a2575573645551cd4f693aa1bab7df11d05938
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000008,sig:11,src:000038,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556367a90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000000000000001 r14=0x0000555556364430 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000009,sig:11,src:000039,op:havoc,rep:4
+SHA1: ea447f51a6415768625b486c90479fa293bbdaab
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000009,sig:11,src:000039,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635ff90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556396000 
+r12=0x0000000000000000 r13=0x0000000000000007 r14=0x0000555556364430 r15=0x0000000000000005 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000010,sig:11,src:000046,op:havoc,rep:8
+SHA1: 37ff737f4423ad0c0f1ad5dc3871e1d6e39d9263
+Classification: PROBABLY_EXPLOITABLE
+Hash: ba616feed08dd1049a2ca574fa346dc6.30645acbf47ee63236dad36d9f77d418
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000010,sig:11,src:000046,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x000055555598972e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635ff90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556396000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000011,sig:11,src:000046,op:havoc,rep:4
+SHA1: 93f2b21493ba2603cb503f05d90b21514b966021
+Classification: PROBABLY_EXPLOITABLE
+Hash: 1782a2830a54974836a92f8e7d37cf4f.59d2e8ac1b36f6c45965134092f01291
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000011,sig:11,src:000046,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559882bd: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000001 r14=0x0000555556364430 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000012,sig:11,src:000058,op:havoc,rep:4
+SHA1: 18df51b51d711872875f4f5bff19cc7d061c3b9f
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000012,sig:11,src:000058,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371240 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b8000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000013,sig:11,src:000058,op:havoc,rep:2
+SHA1: b8b9ba248ea57dafd4044b90824f980cbc1f4cc7
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000013,sig:11,src:000058,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000014,sig:11,src:000143,op:havoc,rep:16
+SHA1: 02a7f846afe206dfc51288afc52d95b8c9ed78c3
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000014,sig:11,src:000143,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371240 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b8000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000015,sig:11,src:000143,op:havoc,rep:4
+SHA1: 15cfaadb9de06e71e7315ba2b76aaf9df09c498f
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000015,sig:11,src:000143,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556377e10 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b8000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000016,sig:11,src:000146,op:havoc,rep:64
+SHA1: 5ae817ea4d73d17989044f30b067e7af359b8924
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000016,sig:11,src:000146,op:havoc,rep:64 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000017,sig:11,src:000146,op:havoc,rep:2
+SHA1: d1cce6df327fad03a46d844097628fe18e04bec8
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000017,sig:11,src:000146,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e00 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x00007ffff7a6dbe0 r10=0x0000000000000002 r11=0x0000555556367fd0 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000018,sig:11,src:000146,op:havoc,rep:4
+SHA1: 3a246572c9b128a73a9fbcf528d964f3e9601fc7
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000018,sig:11,src:000146,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369f00 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x00007ffff7a6dbe0 r10=0x0000000000000002 r11=0x000055555634aa50 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000019,sig:11,src:000146,op:havoc,rep:4
+SHA1: 81a1ebdcd26b01d85b8a0f20dce09d43e05648ed
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000019,sig:11,src:000146,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000020,sig:11,src:000187,op:havoc,rep:4
+SHA1: 18ff07303560b3139360107faf0b6821d4f0068d
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000020,sig:11,src:000187,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000021,sig:11,src:000187,op:havoc,rep:2
+SHA1: 74cdb2485f4c3721478ac21422a6b5994851754b
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000021,sig:11,src:000187,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000022,sig:11,src:000187,op:havoc,rep:16
+SHA1: c93b40c3058fbea9a1f374c0254a93ee9d7501f6
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000022,sig:11,src:000187,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000023,sig:11,src:000256,op:havoc,rep:4
+SHA1: a1fdb7aee8746795340c2f6a879b5d961a00701a
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000023,sig:11,src:000256,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000555556337010 r10=0x0000000000000002 r11=0x00005555563695e0 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000024,sig:11,src:000322,op:havoc,rep:4
+SHA1: 587abceb07c58924ff29f44d04c4766f20d47b22
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000024,sig:11,src:000322,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556368580 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000555556337010 r10=0x0000000000000002 r11=0x0000555556368070 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000025,sig:11,src:000322,op:havoc,rep:4
+SHA1: 5a9a032d63d7de082fd5bc298146eab72ed51147
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000025,sig:11,src:000322,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556368800 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000026,sig:11,src:000322,op:havoc,rep:4
+SHA1: a0ca1422431e3a8df011af19d9eaee0cc83af968
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000026,sig:11,src:000322,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556367920 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000027,sig:11,src:000322,op:havoc,rep:8
+SHA1: b9df5425c23360091baceab9d9778825fa067021
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000027,sig:11,src:000322,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556368b00 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x00007ffff7a6dbe0 r10=0x0000000000000002 r11=0x000055555636ab50 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000028,sig:11,src:000370,op:havoc,rep:8
+SHA1: 9c4bfb511a9b66dfefac639befd19bf1d0f421b2
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000028,sig:11,src:000370,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556367920 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000029,sig:11,src:000447,op:havoc,rep:8
+SHA1: b011160534864336b145bd4eaf6615fd004b9740
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000029,sig:11,src:000447,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000030,sig:11,src:000447,op:havoc,rep:4
+SHA1: d75976e29ed0dfbffde17fe413b96f5e95f64dc8
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000030,sig:11,src:000447,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x00005555563462e0 r10=0x0000000000000002 r11=0x000055555635d350 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000031,sig:11,src:000507,op:flip1,pos:9
+SHA1: 0730526119afbdee378f9b653cb57176d556952f
+Classification: PROBABLY_EXPLOITABLE
+Hash: 03ddc7ecc394ef2781a81331133d44d9.c791c5557f97d6532266a9768550cbc7
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000031,sig:11,src:000507,op:flip1,pos:9 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556369e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000032,sig:11,src:000528,op:havoc,rep:8
+SHA1: 6c9f6b509c9f2bbc689e911dbd24996badad7772
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000032,sig:11,src:000528,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x00005555563712d0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000033,sig:11,src:000528,op:havoc,rep:4
+SHA1: ef6fe3093019c292a3b5f62fd1b5d7c12ca6f36e
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000033,sig:11,src:000528,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556367e10 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000034,sig:11,src:000528,op:havoc,rep:8
+SHA1: b11a012f2164843e46e0e59d8851437d9c57955b
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000034,sig:11,src:000528,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556373910 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000035,sig:11,src:000528,op:havoc,rep:4
+SHA1: 2ae467ffe5d6cb9c339f2e6ff39353e0d25302a8
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000035,sig:11,src:000528,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000036,sig:11,src:000528,op:havoc,rep:4
+SHA1: 770748088de45ec07af826d8153d8312299fa5e1
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000036,sig:11,src:000528,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000037,sig:11,src:000531,op:havoc,rep:8
+SHA1: 16b209592b2768d45249f4b2e37643f3f661a53f
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000037,sig:11,src:000531,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x00005555563725f0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000038,sig:11,src:000531,op:havoc,rep:4
+SHA1: 7f4955f2934e120b0466ad55086b07de04aaf740
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000038,sig:11,src:000531,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x00005555563794b0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000039,sig:11,src:000656,op:havoc,rep:32
+SHA1: 59e7d8de8af86c9f08f11936ffe306184da96878
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000039,sig:11,src:000656,op:havoc,rep:32 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000040,sig:11,src:000656,op:havoc,rep:4
+SHA1: 7852119d085fba188254aced1fa2fb3ce7141f7c
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000040,sig:11,src:000656,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000041,sig:11,src:000765,op:havoc,rep:4
+SHA1: 9ab8998444a9dd63832356c51963960a557a2896
+Classification: PROBABLY_EXPLOITABLE
+Hash: 29fe01f2af40412e3159cd2be13a3ff6.b65cb14acd35c2056cc5935d30909780
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000041,sig:11,src:000765,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556375730 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000042,sig:11,src:000788,op:havoc,rep:2
+SHA1: 4287371349374b3dc2535e6dfbc22eb070c4e66a
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000042,sig:11,src:000788,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c0000 
+r12=0x0000000000000000 r13=0x0000000000000001 r14=0x0000555556367800 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000043,sig:11,src:000788,op:havoc,rep:4
+SHA1: 65b4d2ab855468cd307cc8cf0e1a2d5c423d9524
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000043,sig:11,src:000788,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x000055555639a000 
+r12=0x0000000000000000 r13=0x000000000000003f r14=0x0000555556367800 r15=0x0000000000000037 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000044,sig:11,src:000830,op:havoc,rep:16
+SHA1: 3fe98fea4cc8189320e28d90f598f01147a0597c
+Classification: PROBABLY_EXPLOITABLE
+Hash: ba616feed08dd1049a2ca574fa346dc6.30645acbf47ee63236dad36d9f77d418
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000044,sig:11,src:000830,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x000055555598972e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367dd0 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556360200 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c0000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556367dd0 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000045,sig:11,src:000984,op:havoc,rep:4
+SHA1: 909bb37c0109a385e3d52a5ad6d795add53a8c58
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000045,sig:11,src:000984,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x000055555636e800 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000046,sig:11,src:000984,op:havoc,rep:4
+SHA1: 91630518e3451f46cf7b402a03147522f05d956b
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000046,sig:11,src:000984,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x000055555637a990 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000047,sig:11,src:000985,op:havoc,rep:16
+SHA1: f301506ff3edcf1963f50790170dd9f85fd6314a
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000047,sig:11,src:000985,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556370a50 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000048,sig:11,src:000999,op:havoc,rep:2
+SHA1: 7941cc8b36c2b9aa16af35b6cf6990a9b91d4b93
+Classification: PROBABLY_EXPLOITABLE
+Hash: fe6db32c80baedbc42e63bf7e454d91e.84726fd4f0d8a0a634a5bf5dd3aee996
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000048,sig:11,src:000999,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x000055555636a080 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000049,sig:11,src:001202,op:havoc,rep:2
+SHA1: 1522de83c3033518f3064db104bd032321ab6f27
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000049,sig:11,src:001202,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556377e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000050,sig:11,src:001262,op:havoc,rep:2
+SHA1: 2d7cb05bd6dd54abf8dfa306dd73bbb1655dac66
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000050,sig:11,src:001262,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x000055555636d600 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556381990 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c1000 
+r12=0x0000000000000000 r13=0x000055555636d600 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000051,sig:11,src:001274,op:havoc,rep:8
+SHA1: 68293319eac53d8954f6eab1e617163f16de2b99
+Classification: PROBABLY_EXPLOITABLE
+Hash: 03ddc7ecc394ef2781a81331133d44d9.c791c5557f97d6532266a9768550cbc7
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000051,sig:11,src:001274,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556374010 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000055555635d351 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000052,sig:11,src:001432,op:flip1,pos:57
+SHA1: e043a933ed22d8601de44cb36390d487c49f2ab6
+Classification: PROBABLY_EXPLOITABLE
+Hash: ba616feed08dd1049a2ca574fa346dc6.30645acbf47ee63236dad36d9f77d418
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000052,sig:11,src:001432,op:flip1,pos:57 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x000055555598972e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x000055555636a560 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556377e50 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x000055555636a560 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000053,sig:11,src:001432,op:arith8,pos:57,val:+13
+SHA1: cb58a339ab485d2b9027f6db0e1cecadfebb6ae2
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000053,sig:11,src:001432,op:arith8,pos:57,val:+13 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x000055555636a560 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556378d80 rbp=0x0000000000000000 rsp=0x00007fffffff70c0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c2000 
+r12=0x0000000000000000 r13=0x000055555636a560 r14=0x00007fffffff7980 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010206  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000054,sig:11,src:001432,op:arith8,pos:57,val:+15
+SHA1: 718c32739f6a308c10dda952bbc7f6a88adae45b
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000054,sig:11,src:001432,op:arith8,pos:57,val:+15 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x000055555636a560 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x000055555636a090 rbp=0x0000000000000000 rsp=0x00007fffffff70c0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c2000 
+r12=0x0000000000000000 r13=0x000055555636a560 r14=0x00007fffffff7980 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010206  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000055,sig:11,src:001436,op:flip1,pos:37
+SHA1: 5dbc2424ee5bbbb27c89aa88a6b3f37bb088a00b
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000055,sig:11,src:001436,op:flip1,pos:37 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000056,sig:11,src:001436,op:flip1,pos:37
+SHA1: 3c0fcbbce22f6a2748b7a03fb5b07c0b9c3e3e26
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000056,sig:11,src:001436,op:flip1,pos:37 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000057,sig:11,src:001436,op:flip1,pos:43
+SHA1: 89f0a981b652e1de08dead9a64c14feaffa47b46
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000057,sig:11,src:001436,op:flip1,pos:43 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000058,sig:11,src:001436,op:flip1,pos:50
+SHA1: 2be4e5e67f6477a8e986980c4cb87a2e7faba43d
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000058,sig:11,src:001436,op:flip1,pos:50 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000059,sig:11,src:001436,op:flip4,pos:37
+SHA1: 358b93530d72b7f63fa469835e03ce6c58d464e5
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000059,sig:11,src:001436,op:flip4,pos:37 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000060,sig:11,src:001436,op:arith8,pos:37,val:+3
+SHA1: 3bf57905a6189defbe4451c19c3de15e7ae13aa9
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000060,sig:11,src:001436,op:arith8,pos:37,val:+3 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70c0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7980 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010206  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000061,sig:11,src:001436,op:arith8,pos:52,val:+28
+SHA1: ec4df299973c6890ac5b221d777c8a48f534ed2f
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000061,sig:11,src:001436,op:arith8,pos:52,val:+28 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70c0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7980 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010206  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000062,sig:11,src:001439,op:havoc,rep:16
+SHA1: 9a37cea54a9b127d72f24ecbd17fa39a0ea51cff
+Classification: PROBABLY_EXPLOITABLE
+Hash: 6e87485b9bfc0da5f837016a43a1d6ce.205369f8ff4dd386e3a572c3bbfc74da
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000062,sig:11,src:001439,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556377810 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b8000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000063,sig:11,src:001456,op:havoc,rep:4
+SHA1: da810e95ad11043d6d707bd963b5078b25700b98
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000063,sig:11,src:001456,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556371e80 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000064,sig:11,src:001952,op:havoc,rep:2
+SHA1: 07875cfb95a579e75b48f0e188022970b12d7e7b
+Classification: PROBABLY_EXPLOITABLE
+Hash: 03ddc7ecc394ef2781a81331133d44d9.c791c5557f97d6532266a9768550cbc7
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000064,sig:11,src:001952,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e76f: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x0000555556370370 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563b7000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000065,sig:11,src:002030,op:havoc,rep:2
+SHA1: 9ae01c840adfd43fac32f384d051b2c0a0270999
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000065,sig:11,src:002030,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x00005555563770d0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000066,sig:11,src:002030,op:havoc,rep:4
+SHA1: c59364982a2754f57d13730048e245625a140ce5
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000066,sig:11,src:002030,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556378b10 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000067,sig:11,src:002052,op:havoc,rep:16
+SHA1: f90bee00f38b8945269a6255290465dde150e120
+Classification: PROBABLY_EXPLOITABLE
+Hash: 6e87485b9bfc0da5f837016a43a1d6ce.205369f8ff4dd386e3a572c3bbfc74da
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000067,sig:11,src:002052,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x00005555563789a0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x000000000000000d 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000068,sig:11,src:002066,op:havoc,rep:64
+SHA1: 339f468d2dc2d7bd9062e66167066667b3247d46
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000068,sig:11,src:002066,op:havoc,rep:64 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000069,sig:11,src:002073,op:havoc,rep:32
+SHA1: 13bf7805ffe2bcc6ab4e66c61b92a46f00b4eb4b
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000069,sig:11,src:002073,op:havoc,rep:32 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556364430 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000070,sig:11,src:002157,op:havoc,rep:2
+SHA1: df00ec8ed7f1bd4c40948e6c4fd5841c156a510c
+Classification: PROBABLY_EXPLOITABLE
+Hash: 6e87485b9bfc0da5f837016a43a1d6ce.205369f8ff4dd386e3a572c3bbfc74da
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000070,sig:11,src:002157,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x0000555555981d8e: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x000055555636a560 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555636dd90 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x00007ffff7a6dbe0 r10=0x0000000000000002 r11=0x000055555634aa70 
+r12=0x0000000000000000 r13=0x000055555636a560 r14=0x00007fffffff7990 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000071,sig:11,src:002165,op:havoc,rep:2
+SHA1: acded15c67d390f4e9050c81726e6a4f3c30a329
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000071,sig:11,src:002165,op:havoc,rep:2 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635ff90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x00005555563462e0 r10=0x0000000000000002 r11=0x000055555635d330 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556367800 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000072,sig:11,src:002687,op:flip1,pos:24
+SHA1: 7be160e184c4c077c6acb472a0652dc034070624
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000072,sig:11,src:002687,op:flip1,pos:24 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555637d9f0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000073,sig:11,src:002690,op:havoc,rep:8
+SHA1: 1c12f237d9b16ab71b6a222fd370270ace2e9edd
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000073,sig:11,src:002690,op:havoc,rep:8 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x000055555637d010 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000074,sig:11,src:002699,op:flip1,pos:28
+SHA1: 05f1ca187471c72edf7ae2c339fcef1846907b22
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000074,sig:11,src:002699,op:flip1,pos:28 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555637dcd0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c0000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000075,sig:11,src:002699,op:flip1,pos:28
+SHA1: 06b0ff62b33f4823620108c2c56776dab1aaa482
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000075,sig:11,src:002699,op:flip1,pos:28 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555637df90 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c0000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000076,sig:11,src:002699,op:flip4,pos:1
+SHA1: 4b589276e3869d38e4dbc70cac5086148775d6b8
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000076,sig:11,src:002699,op:flip4,pos:1 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x000055555636a5e0 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x000055555636a390 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563c4000 
+r12=0x0000000000000000 r13=0x000055555636a5e0 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000077,sig:11,src:002727,op:havoc,rep:16
+SHA1: ce5aff37cc388528f6bf3eaec934329996102b45
+Classification: PROBABLY_EXPLOITABLE
+Hash: f9070199b2235d6e566372a0bbfb79e0.26322014df037806cb6b05ada543bcae
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000077,sig:11,src:002727,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x0000555555988b34: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x00005555563679d0 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635fe90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x000055555639a000 
+r12=0x0000000000000000 r13=0x0000000000000007 r14=0x00005555563679d0 r15=0x0000000000000005 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000078,sig:11,src:002757,op:havoc,rep:4
+SHA1: 17c7b0c1bc30972c20b362a8b99d398b0865d979
+Classification: PROBABLY_EXPLOITABLE
+Hash: 618d903c2110baa5b750c2eab84ceecf.2bcdec237fb8bbff4c6a34940dd34a75
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000078,sig:11,src:002757,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597ca66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556364430 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000000 rdi=0x000055555636dcd0 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563a6000 
+r12=0x0000000000000000 r13=0x0000555556364430 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000079,sig:11,src:002757,op:havoc,rep:4
+SHA1: fe405326cd8f80ff8761f6735d5d46bce6529308
+Classification: PROBABLY_EXPLOITABLE
+Hash: 452d6e8f1916dcaa0c6ba20b1e73a9d8.ccc8c3b060902bd91cc4134525b60ed3
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000079,sig:11,src:002757,op:havoc,rep:4 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadPNMImage              @ 0x00005555559866ce: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImage                 @ 0x0000555555b98331: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ReadImages                @ 0x0000555555b9b5cb: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560564ea: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x0000000000000008 
+rsi=0x0000000000000002 rdi=0x000055555635ff90 rbp=0x0000555556346590 rsp=0x00007fffffff4800 
+ r8=0x0000000000000000  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x0000555556379000 
+r12=0x0000000000000000 r13=0x0000000000000008 r14=0x0000555556367800 r15=0x0000000000000001 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
+---CRASH SUMMARY---
+Filename: output_afl/crashes/id:000080,sig:11,src:003266,op:havoc,rep:16
+SHA1: d30f6765d0ca50b8159efb42feedc50f76aac430
+Classification: PROBABLY_EXPLOITABLE
+Hash: 5a6bc0515b1e1cab3d57e38f8a7c7c4b.52babd5dcc74f486ad792fb636189753
+Command: ../ImageMagick-6.7.7-10/utilities/convert output_afl/crashes/id:000080,sig:11,src:003266,op:havoc,rep:16 /dev/null
+Faulting Frame:
+   AcquireQuantumInfo @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Disassembly:
+Stack Head (8 entries):
+   AcquireQuantumInfo        @ 0x0000555555ec9b46: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WritePNMImage             @ 0x000055555597b68a: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImage                @ 0x0000555555b9ca99: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   WriteImages               @ 0x0000555555b9e883: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertImageCommand       @ 0x00005555560550d1: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   MagickCommandGenesis      @ 0x00005555560b6c66: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   ConvertMain               @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+   main                      @ 0x00005555555a5cb2: in /tmp/afl-ramdisk/ImageMagick-6.7.7-10/utilities/convert
+Registers:
+rax=0x0000000000000000 rbx=0x0000555556367800 rcx=0x0000555556337010 rdx=0x00007ffff7a6dbe0 
+rsi=0x0000000000000000 rdi=0x0000555556377980 rbp=0x0000000000000000 rsp=0x00007fffffff70d0 
+ r8=0x0000000000000007  r9=0x0000000000000000 r10=0x0000000000000022 r11=0x00005555563bb000 
+r12=0x0000000000000000 r13=0x0000555556367800 r14=0x00007fffffff7990 r15=0x0000000000000000 
+rip=0x0000555555ec9b46 efl=0x0000000000010202  cs=0x0000000000000033  ss=0x000000000000002b 
+ ds=0x0000000000000000  es=0x0000000000000000  fs=0x0000000000000000  gs=0x0000000000000000 
+Extra Data:
+   Description: Access violation near NULL on destination operand
+   Short description: DestAvNearNull (15/22)
+   Explanation: The target crashed on an access violation at an address matching the destination operand of the instruction. This likely indicates a write access violation, which means the attacker may control write address and/or value. However, it there is a chance it could be a NULL dereference.
+---END SUMMARY---
